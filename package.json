@@ -4,7 +4,7 @@
   "description": "realizehit subscription lib",
   "main": "lib/subscription.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/jshint . && node_modules/.bin/mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/realizehit/subscription",
   "dependencies": {
-    "findhit-util": "^0.2.7",
-    "msgpack": "^0.2.6"
+    "findhit-util": "^0.2.7"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.5"
   }
 }
