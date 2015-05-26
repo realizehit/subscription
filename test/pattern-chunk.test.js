@@ -12,7 +12,7 @@ describe( 'PatternChunk', function () {
         });
 
         it( 'should compare well with origin string', function () {
-            expect( this.patternChunk ).to.be.equal( this.patternChunk );
+            expect( this.patternChunk._string ).to.be.equal( this.string );
         });
 
         it( 'should be instance of pattern', function () {
