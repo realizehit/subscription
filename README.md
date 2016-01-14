@@ -11,6 +11,9 @@ npm i --save findhit-realizehit-subscription
 
 ## Usage
 
+This isnt a real usage, since this module is meant to be used by realize as a lib,
+but this is here just to PoC.
+
 ```js
 var redis = require( 'redis' )( /* ... */ );
 var Subscription = require( 'findhit-realizehit-subscription' );
@@ -24,7 +27,6 @@ subscription.pattern.add( 'show', 'tvnews' );
 
 // gather the channel needed by redis
 redis.psubscribe( subscription.pattern );
-
 ```
 
 ## FAQ
