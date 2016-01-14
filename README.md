@@ -6,7 +6,7 @@ realizehit subscription lib
 ## Installation
 
 ```js
-npm i --save findhit-realizehit-subscription
+npm i --save realizehit-subscription
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ but this is here just to PoC.
 
 ```js
 var redis = require( 'redis' )( /* ... */ );
-var Subscription = require( 'findhit-realizehit-subscription' );
+var Subscription = require( 'realizehit-subscription' );
 var subscription = new Subscription();
 
 // Add a channel filter
@@ -53,7 +53,7 @@ It allows us to create a wide subscription methodology!
 
 Example: Subscribe to entire CNN Shows.
 ```js
-var Subscription = require( 'findhit-realizehit-subscription' );
+var Subscription = require( 'realizehit-subscription' );
 var subscription = new Subscription();
 
 // Add a channel filter

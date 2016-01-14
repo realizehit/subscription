@@ -1,10 +1,11 @@
 {
-  "name": "findhit-realizehit-subscription",
+  "name": "realizehit-subscription",
   "version": "0.1.0",
   "description": "realizehit subscription lib",
   "main": "lib/subscription.js",
   "scripts": {
     "test": "node_modules/.bin/jshint . && node_modules/.bin/mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')"
+    "postversion": "git push origin master; push origin --tags;"
   },
   "repository": {
     "type": "git",
