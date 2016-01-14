@@ -5,14 +5,14 @@ realizehit subscription lib
 ## Installation
 
 ```js
-npm i --save realizehit-subscription
+npm i --save findhit-realizehit-subscription
 ```
 
 ## Usage
 
 ```js
 var redis = require( 'redis' )( /* ... */ );
-var Subscription = require( 'realizehit-subscription' );
+var Subscription = require( 'findhit-realizehit-subscription' );
 var subscription = new Subscription();
 
 // Add a channel filter
@@ -50,7 +50,7 @@ It allows us to create a wide subscription methodology!
 
 Example: Subscribe to entire CNN Shows.
 ```js
-var Subscription = require( 'realizehit-subscription' );
+var Subscription = require( 'findhit-realizehit-subscription' );
 var subscription = new Subscription();
 
 // Add a channel filter

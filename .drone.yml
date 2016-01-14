@@ -1,0 +1,13 @@
+build:
+  image: cusspvz/node:development
+  commands:
+    - npm install
+    - npm test
+
+publish:
+  npm:
+    username: findhit
+    password: findhit123
+    email: sys.admin@findhit.com
+    registry: "https://sinopia.findhit.com"
+    always_auth: true
