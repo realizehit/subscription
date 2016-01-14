@@ -1,6 +1,7 @@
 # subscription
-
 realizehit subscription lib
+
+[![Build Status](https://drone.findhit.com/api/badges/realizehit/subscription/status.svg)](https://drone.findhit.com/realizehit/subscription)
 
 ## Installation
 
