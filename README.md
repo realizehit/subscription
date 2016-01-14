@@ -1,7 +1,5 @@
-# subscription
+# subscription [![Build Status](https://travis-ci.org/realizehit/subscription.svg?branch=master)](https://travis-ci.org/realizehit/subscription)
 realizehit subscription lib
-
-[![Build Status](https://drone.findhit.com/api/badges/realizehit/subscription/status.svg)](https://drone.findhit.com/realizehit/subscription)
 
 ## Installation
 
