@@ -1,16 +1,18 @@
 # subscription [![Build Status](https://travis-ci.org/realizehit/subscription.svg?branch=master)](https://travis-ci.org/realizehit/subscription)
-realizehit subscription lib
+
+Subscription pattern handling for realizehit
 
 ## Installation
 
 ```js
-npm i --save realizehit-subscription
+npm install --save realizehit-subscription
 ```
 
 ## Usage
 
-This isnt a real usage, since this module is meant to be used by realize as a lib,
-but this is here just to PoC.
+Subscription is used as a lib by other *realizehit* modules.
+
+This lib is intended to generate and drive redis-valid patterns.
 
 ```js
 var redis = require( 'redis' )( /* ... */ );
@@ -31,7 +33,7 @@ redis.psubscribe( subscription.pattern );
 
 ##### Why is this module separated from the core?
 
-Because we use it as a shared library, on client and server.
+Because it is to be used on both repos.
 
 
 ##### Why don't you never use `subscription` object?

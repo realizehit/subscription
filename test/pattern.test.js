@@ -9,7 +9,7 @@ describe( 'Pattern', function () {
 
         pattern.add( 'channel', 'testing' )
 
-        expect( pattern.stringify() ).to.be.equal( "channel:\"testing\"" )
+        expect( pattern.stringify() ).to.be.equal( "channel:testing" )
     })
 
     it( 'should be able to use multiple filters', function () {
@@ -18,7 +18,7 @@ describe( 'Pattern', function () {
         pattern.add( 'channel', 'testing' )
         pattern.add( 'event', 'somethint' )
 
-        expect( pattern.stringify() ).to.be.equal( "channel:\"testing\"|event:\"somethint\"" )
+        expect( pattern.stringify() ).to.be.equal( "channel:testing|event:somethint" )
     })
 
     it( 'should maintain same pattern by sorting filters', function () {
@@ -27,10 +27,12 @@ describe( 'Pattern', function () {
         pattern.add( 'event', 'somethint' )
         pattern.add( 'channel', 'testing' )
 
-        expect( pattern.stringify() ).to.be.equal( "channel:\"testing\"|event:\"somethint\"" )
+        expect( pattern.stringify() ).to.be.equal( "channel:testing|event:somethint" )
     })
 
-    it( 'should use pattern chunks without quotes', function () {
+    // NOTE:
+    // Skip tests until we support magic chunks
+    it.skip( 'should use pattern chunks without quotes', function () {
         var pattern = new Pattern()
         var chunk = Pattern.Chunk.ALL
 
