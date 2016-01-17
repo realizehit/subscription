@@ -7,11 +7,3 @@ node_js:
 - iojs
 services:
 - redis-server
-deploy:
-  provider: npm
-  email: jose.moreira@findhit.com
-  api_key:
-    secure: z+JHTAo72YL38WJEtdVpQKtuWHsYbcmJ6fz8FgYzbhFodjF11BSDqQsKdDiogmlqzyR+BsRGnRgrHdLQke0nx6XzgbwREor0pnj1UR8U7xXSsEVGvuFJw6um2Y0ZSdyE6iZ4jFpK0gp0y9jea6iYXaQ8s0ao7FBxhfPabr6rBmA3WR3p2+1umZ7x7nSVqeS3MZvtcdWD79xrKqWiH3brb8KKkHDuzXFc+x1NQ6wOblIzfCM3YeXDC3df/8ObhJdp/8qAn3FMKOiS/WieR2gcCXIAJ4j///wiGjmio4k7BhnGz6p8700HP8N0V01jUoQVe9Axf/xqr81TfRgdoi/70RtRluIFY1blXjg29+m1K0Bpi0+fiIvrKRqABG6j96idBX7xqbO3Wawd5IpeUkWvsk4YFLnDoes8mGlxV7TryDC7mbSIRpHnEV+W65DMk8kfJkgy5qO3EVycVGVITZmDRDYxjhOXyMR8bY/WahgoNJcHWghBDKErRdXd9mHO6oSzHQUmhROHKbLNMASdbRqP03X5pBlHWeIVeDH2jUwIg2fTAbPRzyJFHsGFG+yrU3Z/QH8y8KJNQYtsUsqe3CUDIfVLhck7DpMa69/yoxJe8WWJ1fM9VT2nT5WWMKKjQLLT3pE+lGfNPsckT7H/w87dzZU9F1e62nuMLbph7o90ThI=
-  on:
-    tags: true
-    repo: realizehit/subscription
