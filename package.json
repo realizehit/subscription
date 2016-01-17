@@ -4,7 +4,9 @@
   "description": "realizehit subscription lib",
   "main": "lib/subscription.js",
   "scripts": {
-    "test": "node_modules/.bin/jshint . && node_modules/.bin/mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')",
+    "test-jshint": "jshint .",
+    "test-mocha": "mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')",
+    "test": "for kind in jshint mocha; do npm run test-$kind; done",
     "preversion": "npm test",
     "postversion": "git push origin master; git push origin --tags; npm publish"
   },
