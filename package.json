@@ -1,8 +1,8 @@
 {
   "name": "realizehit-subscription",
   "version": "0.1.2",
-  "description": "realizehit subscription lib",
-  "main": "lib/subscription.js",
+  "description": "realizehit subscription class",
+  "main": "src/subscription.js",
   "scripts": {
     "test-jshint": "jshint .",
     "test-mocha": "mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 10000 --reporter spec $(find test/* -name '*.test.js')",

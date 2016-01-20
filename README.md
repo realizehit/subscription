@@ -1,6 +1,8 @@
-# subscription [![Build Status](https://travis-ci.org/realizehit/subscription.svg?branch=master)](https://travis-ci.org/realizehit/subscription)
+# realizehit-subscription [![Build Status](https://travis-ci.org/realizehit/subscription.svg?branch=master)](https://travis-ci.org/realizehit/subscription)
 
 Subscription pattern handling for realizehit
+
+Probably you might want to use [realizehit/realizehit](https://github.com/realizehit/realizehit) instead.
 
 ## Installation
 
