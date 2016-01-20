@@ -1,6 +1,6 @@
 var chai = require( 'chai' )
 var expect = chai.expect
-var Pattern = require( '../lib/pattern' )
+var Pattern = require( '../src/pattern' )
 
 describe( 'Pattern', function () {
 

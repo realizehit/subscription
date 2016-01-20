@@ -1,6 +1,6 @@
 var chai = require( 'chai' )
 var expect = chai.expect
-var PatternChunk = require( '../lib/pattern-chunk' )
+var PatternChunk = require( '../src/pattern-chunk' )
 
 describe( 'PatternChunk', function () {
 

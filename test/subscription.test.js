@@ -1,6 +1,6 @@
 var chai = require( 'chai' )
 var expect = chai.expect
-var Subscription = require( '../lib/subscription' )
+var Subscription = require( '../src/subscription' )
 
 describe( "Subscription", function () {
 

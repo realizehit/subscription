@@ -1,6 +1,6 @@
 var Redis = require( 'ioredis' )
 var Promise = require( 'bluebird' )
-var Subscription = require( '../lib/subscription' )
+var Subscription = require( '../src/subscription' )
 var debug = require( 'debug' )( 'realizehit:test:redis' )
 
 var connections = [ 'sub', 'pub' ]
