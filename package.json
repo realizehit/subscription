@@ -1,6 +1,6 @@
 {
   "name": "realizehit-subscription",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "realizehit subscription class",
   "main": "src/subscription.js",
   "scripts": {
