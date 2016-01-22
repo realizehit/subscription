@@ -2,6 +2,7 @@ var Pattern = require( './pattern' )
 var crypto = require( 'crypto' )
 var debug = require( 'debug' )( 'realizehit:subscription' )
 var EventEmitter = require( 'events' ).EventEmitter
+var pattern2id = require( 'realizehit-pattern-to-id' )
 
 function Subscription ( filters ) {
     if ( ! ( this instanceof Subscription ) ) {
@@ -18,11 +19,7 @@ function Subscription ( filters ) {
     this.pattern = new Pattern( filters )
 
     function updateId () {
-        subscription.id = crypto
-            .createHash( 'md5' )
-            .update( subscription.pattern.stringify() )
-            .digest( 'hex' )
-            .substr( 0, 8 )
+        subscription.id = pattern2id( subscription.pattern.stringify() )
     }
 
     this.pattern.on( 'updated', updateId )
