@@ -116,7 +116,7 @@ Pattern.prototype.stringify = function ( forSubscribe ) {
                 filters[ name ] instanceof PatternChunk ? filters[ name ] :
                 ( filters[ name ] +'' ).trim()
 
-            if ( chunk.length === 2 ) {
+            if ( ! chunk ) {
                 throw new TypeError( "invalid filter.prop chunk provided" )
             }
 
