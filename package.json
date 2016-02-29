@@ -27,7 +27,7 @@
   "homepage": "https://github.com/realizehit/subscription",
   "dependencies": {
     "debug": "^2.2.0",
-    "findhit-util": "^0.2.7",
+    "object-assign": "^4.0.1",
     "realizehit-pattern-to-id": "^1.0.0"
   },
   "devDependencies": {

@@ -1,5 +1,4 @@
 var PatternChunk = require( './pattern-chunk' )
-var Util = require( 'findhit-util' )
 var EventEmitter = require( 'events' ).EventEmitter
 var debug = require( 'debug' )( 'realizehit:subscription' )
 
@@ -81,7 +80,7 @@ Pattern.prototype.reset = function ( filters ) {
 
 Pattern.prototype.update = function ( filters ) {
 
-    if ( Util.isnt.Object( filters ) ) {
+    if ( typeof filters !== 'object' ) {
         throw new TypeError( "invalid filters provided" )
     }
 

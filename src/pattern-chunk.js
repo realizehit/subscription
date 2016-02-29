@@ -1,4 +1,4 @@
-var Util = require( 'findhit-util' )
+var assign = require( 'object-assign' )
 
 function Pattern ( pattern ) {
 
@@ -9,7 +9,7 @@ function Pattern ( pattern ) {
         throw new TypeError( "please provide a valid pattern" )
     }
 
-    Util.extend( this, pattern )
+    assign( this, pattern )
     this._string = pattern
 }
 

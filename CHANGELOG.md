@@ -1,5 +1,5 @@
 ## Upcoming
-
+- Remove findhit-util dependency (got issues with webpack rendering)
 
 ## 0.1.0
 - added overall tests
