@@ -1,5 +1,6 @@
 var PatternChunk = require( './pattern-chunk' )
 var EventEmitter = require( 'events' ).EventEmitter
+var sort = require( 'bp-array-sort' )
 var debug = require( 'debug' )( 'realizehit:subscription' )
 
 function Pattern ( filters ) {
@@ -104,25 +105,19 @@ Pattern.prototype.stringify = function ( forSubscribe ) {
         throw new Error( "Cannot stringify without having filters" )
     }
 
-    var string
+    var string = sort( keys, function ( a, b ) { return a > b })
+    .map(function ( name ) {
+        var chunk =
+            filters[ name ] instanceof PatternChunk ? filters[ name ] :
+            ( filters[ name ] +'' ).trim()
 
-    keys.sort(function ( a, b ) {
-        return a > b
+        if ( ! chunk ) {
+            throw new TypeError( "invalid filter.prop chunk provided" )
+        }
+
+        return name + ( forSubscribe && '\\:'|| ':' ) + chunk
     })
-
-    string = keys
-        .map(function ( name ) {
-            var chunk =
-                filters[ name ] instanceof PatternChunk ? filters[ name ] :
-                ( filters[ name ] +'' ).trim()
-
-            if ( ! chunk ) {
-                throw new TypeError( "invalid filter.prop chunk provided" )
-            }
-
-            return name + ( forSubscribe && '\\:'|| ':' ) + chunk
-        })
-        .join( ( forSubscribe && '\\|'|| '|' ) )
+    .join( ( forSubscribe && '\\|'|| '|' ) )
 
     this._string = string
     return string

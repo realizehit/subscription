@@ -1,4 +1,5 @@
 ## Upcoming
+- Added `bp-array-sort` to fix issues with safari webkit engine.
 - Remove findhit-util dependency (got issues with webpack rendering)
 
 ## 0.1.0

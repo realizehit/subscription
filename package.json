@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/realizehit/subscription",
   "dependencies": {
+    "bp-array-sort": "^0.1.0",
     "debug": "^2.2.0",
     "object-assign": "^4.0.1",
     "realizehit-pattern-to-id": "^1.0.0"
